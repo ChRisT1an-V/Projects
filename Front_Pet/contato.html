@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Melhor Amigo Petshop</title>
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=97263&format=png&color=000000" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <button id="toggleTheme" class="cta-button" style="margin-left: 16px;">🌚/🌞</button>
+            <a href="index.html" class="logo">
+                <img src="https://img.icons8.com/?size=100&id=97263&format=png&color=000000" alt="Logo Melhor Amigo" style="height: 32px; vertical-align: middle; margin-right: 8px; ">
+                   Melhor Amigo
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="produtos.html" class="nav-link">Produtos</a></li>
+                <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                <li><a href="contato.html" class="nav-link active">Contato</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+        </nav>
+    </header>
+
+    <main style="margin-top: 70px;">
+        <section class="contact">
+            <div class="contact-container">
+                <div>
+                    <strong><h2>Entre em Contato</h2></strong>
+                    <strong><p style="margin-bottom: 30px; color: var(--muted-foreground); font-size: 1.1rem;">
+                        Estamos aqui para cuidar do seu melhor amigo! Entre em contato conosco para agendar 
+                        serviços ou tirar dúvidas.
+                    </p></strong>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone">Telefone *</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pet">Nome do Pet</label>
+                            <input type="text" id="pet" name="pet">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="servico">Serviço de Interesse</label>
+                            <select id="servico" name="servico" style="padding: 12px; border: 2px solid var(--border); border-radius: var(--radius); background-color: var(--input); font-family: inherit;">
+                                <option value="">Selecione um serviço</option>
+                                <option value="banho">Banho e Limpeza</option>
+                                <option value="tosa">Tosa</option>
+                                <option value="racao">Ração e Alimentação</option>
+                                <option value="spa">Spa Relaxante</option>
+                                <option value="combo">Combo Completo</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Conte-nos como podemos ajudar você e seu pet..." required></textarea>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <input type="checkbox" id="newsletter" name="newsletter" style="margin-right: 10px;">
+                            <label for="newsletter" style="margin-bottom: 0; font-size: 0.9rem;">
+                                Quero receber novidades e promoções por e-mail
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Enviar Mensagem</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    
+                    <div class="info-item">
+                        <span class="info-icon">🌎</span>
+                        <div>
+                            <strong>Endereço 🏪</strong><br>
+                            Av. Vinte de Janeiro, 377 - Boa Viagem, Recife<br>
+                            PE, 51030-160
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <strong>Telefone ☎️</strong><br>
+                            (81)3341-1705<br>
+                            WhatsApp - (81)99870-0345
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <strong>E-mail 📩</strong><br>
+                            Contato:<strong> melhoramigo@gmail.com</strong><br>
+                            Agendamento:<strong> Via WhatsApp 📱</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-icon">🕒</span>
+                        <div>
+                            <strong>Horário de Funcionamento 🕒</strong><br>
+                            Segunda a Sexta: 8h às 18h<br>
+                            Sábado: 8h às 16h<br>
+                            Domingo: 9h às 14h
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px; padding: 20px; background-color: var(--muted); border-radius: var(--radius);">
+                        <h4 style="color: var(--primary); margin-bottom: 10px;">🚨 Emergências</h4>
+                        <p style="font-size: 0.9rem; color: var(--muted-foreground);">
+                            Para emergências veterinárias, entre em contato com nossos parceiros:
+                        </p>
+                        <p style="font-weight: 600; color: var(--primary);">
+                            Hospital Veterinário 24h: (81)3341-1705
+                        </p>
+                        
+                    </div>
+                    
+                    <div style="margin-top: 15px; padding: 20px;">
+                        <h4 style="color: var(--primary); margin-bottom: 15px;">Siga-nos no Instagram, Nos mande mensagem WhatsApp, Um guia de detalhes sobre a raça do seu pet ⬇️</h4>
+                        <div style="display: flex; gap: 15px;">
+                            <a target="_blank" href="https://www.instagram.com/petshop.melhor_amigo/">
+                            <img src="icons8-instagram-96.png" alt="instagram do petshop"></a>
+                            <a target="_blank" href="https://wa.me/558199870-0345?text=Olá, gostaria de saber mais sobre os serviços do Petshop Melhor Amigo.">
+                            <img src="https://img.icons8.com/?size=100&id=108636&format=png&color=000000" alt="WhatsApp"></a>
+                            <a target="_blank" href="https://www.cobasi.com.br/racas?srsltid=AfmBOorRSWkzs7-DaaiYepcUBQ6gNONHr_8xnSYO_11V76XS_xG-Utl8">
+                            <img src="icons8-cópia-da-pata-do-cão-96.png" alt="Site raças de cães"></a>
+                            <a target="_blank" href="https://icons8.com/icons">
+                            <img src="https://img.icons8.com/?size=100&id=p4yzk6ziOeI7&format=png&color=000000g" alt="icones"></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção do Mapa -->
+        <section style="padding: 0; background-color: var(--muted);">
+            <div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px;">
+                <h3 style="text-align: center; font-size: 2rem; color: var(--primary); margin-bottom: 30px;">
+                    Nossa Localização
+                </h3>
+                <div style="background-color: var(--card); padding: 40px; border-radius: var(--radius); text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                    <h4 style="color: var(--primary); margin-bottom: 20px;">Encontre-nos aqui:</h4>
+                    <div style="background-color: var(--muted); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; padding: 10px;">
+                        <iframe
+                            src="https://www.google.com/maps?q=Av.+Vinte+de+Janeiro,+377+-+Boa+Viagem,+Recife+-+PE&output=embed"
+                            width="100%" height="400" style="border:0; border-radius: 16px;"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p style="color: var(--muted-foreground);">
+                        Estamos localizados no coração da cidade, com fácil acesso e estacionamento disponível. Seu pet merece o melhor, e nós estamos aqui para fornecer exatamente isso. Confie no Petshop "Melhor Amigo" para cuidar do seu melhor amigo como se fosse nosso próprio.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Melhor Amigo Petshop</h4>
+                    <p>No Petshop "Melhor Amigo", também acreditamos na importância da 
+socialização e diversão para o bem-estar dos animais. Por isso, oferecemos 
+momentos especiais de brincadeiras e interação em nosso espaço dedicado, 
+garantindo que seu pet se divirta e faça novos amigos. Além disso, temos uma 
+ampla variedade de brinquedos e acessórios para enriquecer a vida do seu 
+animalzinho. Desde 2009 cuidando do seu melhor amigo.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>🏪 Av. Vinte de Janeiro, 377 - Boa Viagem, Recife - PE</p>
+                    <p>📞 (81)3341-1705</p>
+                    <p>📩 contato:<strong> melhoramigo@gmail.com</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horário de Funcionamento</h4>
+                    <p>Segunda a Sábado: 8h às 17:30h</p>
+                    <p>Domingo: Fechado</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Melhor Amigo Petshop. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Christian Vinicius.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melhor Amigo - Petshop</title>
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=97263&format=png&color=000000" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>.hero {
+  position: relative;
+  background: url('Image_fx (22).jpg') center/cover no-repeat;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 253, 253, 0); /* verde com transparência, ajuste o valor para mais ou menos efeito */
+  z-index: 1;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <button id="toggleTheme" class="cta-button" style="margin-left: 16px;">🌚/🌞</button>
+            <a href="index.html" class="logo">
+                <img src="https://img.icons8.com/?size=100&id=97263&format=png&color=000000" alt="Logo Melhor Amigo" style="height: 32px; vertical-align: middle; margin-right: 8px; ">
+                   Melhor Amigo
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Início</a></li>
+                <li><a href="produtos.html" class="nav-link">Produtos</a></li>
+                <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-text-bg">
+                    <h1>
+                        <img src="https://img.icons8.com/?size=100&id=97263&format=png&color=000000" 
+                             alt="Logo Melhor Amigo" 
+                             style="height: 52px; vertical-align: middle;">
+                        Melhor Amigo
+                    </h1>
+                    <p class="slogan">"Cuidando do seu pet com amor e carinho"</p>
+                    <p class="description">
+                        Bem-vindo ao Petshop "Melhor Amigo"! No Petshop "Melhor Amigo", nós entendemos que seu animal de estimação é mais do que apenas um bichinho, é um membro especial da sua família. Com isso em mente, estamos comprometidos em fornecer cuidados excepcionais e serviços de alta qualidade para garantir que seu melhor amigo tenha uma vida feliz e saudável.
+                    </p>
+                    <a href="produtos.html" class="cta-button">Conheça Nossos Produtos</a>
+                </div>
+            </div>
+        </section>
+         
+        <section class="services">
+            <div class="services-container">
+                <h2>Nossos Serviços</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="Image_fx (16).jpg" alt="Banho e Limpeza" style="width: 300px; height: 300px; object-fit: cover; border-radius: var(--radius); margin-bottom: 10px;">
+                        <h3>Banho e Limpeza 🛁</h3>
+                        <p>Com uma equipe dedicada e apaixonada por animais, nossos profissionais 
+treinados estão prontos para oferecer os melhores cuidados para o seu pet. Serviços completos de higiene para manter seu pet sempre limpo e cheiroso, com produtos de qualidade e profissionais especializados.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="Image_fx (18).jpg" alt="Tosa Profissional" style="width: 300px; height: 300px; object-fit: cover; border-radius: var(--radius); margin-bottom: 10px;">
+                        <h3>Tosa Profissional ✂️</h3>
+                        <p>Desde serviços de tosa profissional, onde deixaremos seu animalzinho com um 
+visual impecável, até a limpeza e higienização completa, proporcionamos um 
+ambiente seguro e tranquilo para que seu amigo se sinta confortável durante 
+todo o processo. Cortes estilosos e funcionais adaptados à raça e personalidade do seu pet, realizados por tosadores experientes.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="Image_fx (17).jpg" alt="Rações Premium" style="width: 300px; height: 300px; object-fit: cover; border-radius: var(--radius); margin-bottom: 10px;">
+                        <h3>Rações Premium 🐶</h3>
+                        <p>Sabemos que a alimentação é fundamental para a saúde do seu pet, por isso 
+oferecemos uma ampla variedade de rações de alta qualidade e alimentos 
+balanceados, adaptados às necessidades individuais de cada animal. Nossos 
+especialistas estão disponíveis para fornecer orientação personalizada e ajudá
+lo a escolher a melhor opção para o seu amiguinho.</p>
+                    </div>
+                </div>
+                
+                <div style="background-color: var(--primary); color: var(--primary-foreground); padding: 30px; border-radius: var(--radius); margin-top: 40px;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 15px;">🎉 Promoção Especial!</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                        Banho + Tosa + Ração Premium por apenas <strong>R$140,00</strong>
+                    </p>
+                    <p style="opacity: 0.9;">Válido até o final do mês. Agende já!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Melhor Amigo Petshop</h4>
+                    <p>No Petshop "Melhor Amigo", também acreditamos na importância da 
+socialização e diversão para o bem-estar dos animais. Por isso, oferecemos 
+momentos especiais de brincadeiras e interação em nosso espaço dedicado, 
+garantindo que seu pet se divirta e faça novos amigos. Além disso, temos uma 
+ampla variedade de brinquedos e acessórios para enriquecer a vida do seu 
+animalzinho. Desde 2009 cuidando do seu melhor amigo.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>🏪 Av. Vinte de Janeiro, 377 - Boa Viagem, Recife - PE</p>
+                    <p>📞 (81)3341-1705</p>
+                    <p>📩 contato:<strong> melhoramigo@gmail.com</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horário de Funcionamento</h4>
+                    <p>Segunda a Sábado: 8h às 17:30h</p>
+                    <p>Domingo: Fechado</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Melhor Amigo Petshop. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Christian Vinicius.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

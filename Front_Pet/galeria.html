@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Melhor Amigo Petshop</title>
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=97263&format=png&color=000000" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <button id="toggleTheme" class="cta-button" style="margin-left: 16px;">🌚/🌞</button>
+            <a href="index.html" class="logo">
+                <img src="https://img.icons8.com/?size=100&id=97263&format=png&color=000000" alt="Logo Melhor Amigo" style="height: 32px; vertical-align: middle; margin-right: 8px; ">
+                   Melhor Amigo
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="produtos.html" class="nav-link">Produtos</a></li>
+                <li><a href="galeria.html" class="nav-link active">Galeria</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+        </nav>
+    </header>
+
+    <main style="margin-top: 70px;">
+        <section class="gallery">
+            <div class="gallery-container">
+                <h2>Nossos Clientes Especiais</h2>
+                <p style="text-align: center; margin-bottom: 50px; color: var(--muted-foreground); font-size: 1.1rem;">
+                    Veja alguns dos nossos amiguinhos que cuidamos com muito carinho
+                </p>
+        
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openModal('Image_fx (4).jpg')">
+                        <img src="Image_fx (4).jpg" alt="Golden Retriever após tosa">
+                        <div class="gallery-overlay">
+                            <h4>Rex - Golden Retriever</h4>
+                            <p>Após banho e tosa completa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openModal('image_fx (5).jpg')">
+                        <img src="Image_fx (5).jpg" alt="Gato Persa após banho">
+                        <div class="gallery-overlay">
+                            <h4>Nino - Gato Persa</h4>
+                            <p>Spa relaxante completo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openModal('image_fx (6).jpg')">
+                        <img src="Image_fx (6).jpg" alt="Poodle com tosa criativa">
+                        <div class="gallery-overlay">
+                            <h4>Julieta - Poodle Toy</h4>
+                            <p>Tosa criativa especial</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openModal('image_fx (7).jpg')">
+                        <img src="Image_fx (7).jpg" alt="Labrador após serviços">
+                        <div class="gallery-overlay">
+                            <h4>Thor - Labrador</h4>
+                            <p>Cliente fiel há 3 anos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openModal('image_fx (9).jpg')">
+                        <img src="Image_fx (9).jpg" alt="Shih Tzu com acessórios">
+                        <div class="gallery-overlay">
+                            <h4>Princesa - Shih Tzu</h4>
+                            <p>Tosa estética com acessórios</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openModal('image_fx (8).jpg')">
+                        <img src="Image_fx (8).jpg" alt="Border Collie após tosa">
+                        <div class="gallery-overlay">
+                            <h4>Tom - Border Collie</h4>
+                            <p>Tosa higiênica e banho</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openModal('image_fx (10).jpg')">
+                        <img src="Image_fx (10).jpg" alt="Gato Siamês">
+                        <div class="gallery-overlay">
+                            <h4>Simba - Siamês</h4>
+                            <p>Limpeza e cuidados especiais</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openModal('image_fx (11).jpg')">
+                        <img src="Image_fx (11).jpg" alt="Yorkshire Terrier">
+                        <div class="gallery-overlay">
+                            <h4>Mel - Yorkshire</h4>
+                            <p>Tosa para raças pequenas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openModal('image_fx (12).jpg')">
+                        <img src="Image_fx (12).jpg" alt="Bulldog Francês">
+                        <div class="gallery-overlay">
+                            <h4>Brutos - Bulldog Francês</h4>
+                            <p>Cuidados especiais para a raça</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openModal('image_fx (14).jpg')">
+                        <img src="Image_fx (14).jpg" alt="Maine Coon">
+                        <div class="gallery-overlay">
+                            <h4>Garfield - Maine Coon</h4>
+                            <p>Escovação e desembaraço</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openModal('image_fx (13).jpg')">
+                        <img src="Image_fx (13).jpg" alt="Beagle feliz">
+                        <div class="gallery-overlay">
+                            <h4>Snoopy - Beagle</h4>
+                            <p>Sempre animado após o banho</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" onclick="openModal('image_fx (15).jpg')">
+                        <img src="Image_fx (15).jpg" alt="Cocker Spaniel">
+                        <div class="gallery-overlay">
+                            <h4>Babi - Cocker Spaniel</h4>
+                            <p>Tosa e hidratação dos pelos</p>
+                        </div>
+                    </div>
+                </div>
+                <strong><p>Nossa galeria de fotos é o reflexo do nosso amor e cuidado pelos animais. Lá, 
+você poderá ver alguns dos adoráveis clientes que já passaram pelo nosso 
+petshop. É um verdadeiro prazer atender a cada um deles e contribuir para o 
+seu bem-estar e felicidade. </p></strong>
+
+                <!-- Seção de Depoimentos -->
+                <div style="margin-top: 80px; background-color: var(--background); padding: 60px 40px; border-radius: var(--radius); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                    <h3 style="text-align: center; font-size: 2rem; color: var(--primary); margin-bottom: 40px;">O que nossos clientes dizem:</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                        <div style="text-align: center; padding: 20px;">
+                            <img src="https://img.icons8.com/?size=100&id=80137&format=png&color=000000" alt="Emoji" style="width: 2.5rem; height: 2.5rem; display: block; margin: 0 auto 10px auto;">
+                            <p style="font-style: italic; margin-bottom: 15px; color: var(--muted-foreground);">
+                                "O Rex nunca ficou tão bonito! O atendimento é excepcional e o carinho com os animais é visível."
+                            </p>
+                            <strong style="color: var(--primary);">- Maria Silva</strong>
+                        </div>
+                        <div style="text-align: center; padding: 20px;">
+                            <img src="https://img.icons8.com/?size=100&id=42811&format=png&color=000000" alt="Emoji" style="width: 2.5rem; height: 2.5rem; display: block; margin: 0 auto 10px auto;">
+                            <p style="font-style: italic; margin-bottom: 15px; color: var(--muted-foreground);">
+                                "Meu gato Nino adora vir aqui! A equipe é muito profissional e cuidadosa."
+                            </p>
+                            <strong style="color: var(--primary);">- João Santos</strong>                
+                        </div>
+                        <div style="text-align: center; padding: 20px;">
+                            <img src="https://img.icons8.com/?size=100&id=66419&format=png&color=000000" alt="Emoji" style="width: 2.5rem; height: 2.5rem; display: block; margin: 0 auto 10px auto;">
+                            <p style="font-style: italic; margin-bottom: 15px; color: var(--muted-foreground);">
+                                "Melhor petshop da região! Preços justos e qualidade incomparável."
+                            </p>
+    
+                            <strong style="color: var(--primary);">- Ana Costa</strong>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para visualização ampliada -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <img id="modalImage" src="/placeholder.svg" alt="">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Melhor Amigo Petshop</h4>
+                    <p>No Petshop "Melhor Amigo", também acreditamos na importância da 
+socialização e diversão para o bem-estar dos animais. Por isso, oferecemos 
+momentos especiais de brincadeiras e interação em nosso espaço dedicado, 
+garantindo que seu pet se divirta e faça novos amigos. Além disso, temos uma 
+ampla variedade de brinquedos e acessórios para enriquecer a vida do seu 
+animalzinho. Desde 2009 cuidando do seu melhor amigo.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>🏪 Av. Vinte de Janeiro, 377 - Boa Viagem, Recife - PE</p>
+                    <p>📞 (81)3341-1705</p>
+                    <p>📩 contato:<strong> melhoramigo@gmail.com</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horário de Funcionamento</h4>
+                    <p>Segunda a Sábado: 8h às 17:30h</p>
+                    <p>Domingo: Fechado</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Melhor Amigo Petshop. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Christian Vinicius.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

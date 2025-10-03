@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Melhor Amigo Petshop</title>
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=97263&format=png&color=000000" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="produtos-bg">
+    <header class="header">
+        <nav class="nav-container">
+            <button id="toggleTheme" class="cta-button" style="margin-left: 16px;">🌚/🌞</button>
+            <a href="index.html" class="logo">
+                <img src="https://img.icons8.com/?size=100&id=97263&format=png&color=000000" alt="Logo Melhor Amigo" style="height: 32px; vertical-align: middle; margin-right: 8px; ">
+                   Melhor Amigo
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="produtos.html" class="nav-link active">Produtos</a></li>
+                <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+        </nav>
+    </header>
+
+    <main style="margin-top: 70px;">
+        <section class="products">
+            <div class="products-container">
+                <h2>Nossos Produtos e Serviços</h2>
+                <div class="product-categories">
+                    
+                    <!-- Categoria Limpeza -->
+                    <div class="category">
+                        <div class="category-header">
+                            <h3>🛁 Serviços de Limpeza</h3>
+                        </div>
+                        <div class="category-content">
+                             <img src="Image_fx (20).jpg" alt="Banho Completo" style="width: 315px; height:350px; object-fit:cover; border-radius:30px; margin-right:100px;">
+                            <div class="product-item">    
+                                <div class="product-image">🧴</div>
+                                <div class="product-info">
+                                    <h4>Banho Completo</h4>
+                                    <p>Banho com shampoo especial, condicionador e secagem. Inclui limpeza de ouvidos e corte de unhas.</p>
+                                    <strong style="color: var(--primary);">A partir de R$ 90,00</strong>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-image">🦷</div>
+                                <div class="product-info">
+                                    <h4>Escovação Dental</h4>
+                                    <p>Limpeza dental profissional para manter a saúde bucal do seu pet em dia.</p>
+                                    <strong style="color: var(--primary);">R$ 65,00</strong>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-image">🕯️</div>
+                                <div class="product-info">
+                                    <h4>Spa Relaxante</h4>
+                                    <p>Tratamento completo com banho, hidratação, massagem relaxante e aromaterapia.</p>
+                                    <strong style="color: var(--primary);">R$ 80,00</strong>
+                                </div>
+                            </div>
+                            <button class="submit-button" onclick="solicitarInfo('limpeza')">Solicitar Informações</button>
+                        </div>
+                    </div>
+
+                    <!-- Categoria Tosa -->
+                    <div class="category">
+                        <div class="category-header">
+                            <h3>✂️ Serviços de Tosa</h3>
+                        </div>
+                        <div class="category-content">
+                            <img src="Image_fx (19).jpg" alt="Serviços de Tosa" style="width: 315px; height:350px; object-fit:cover; border-radius:30px; margin-right:100px;">
+                            <div class="product-item">
+                                <div class="product-image">✂️</div>
+                                <div class="product-info">
+                                    <h4>Tosa Higiênica</h4>
+                                    <p>Corte nas áreas íntimas e patas para manter a higiene e conforto do animal.</p>
+                                    <strong style="color: var(--primary);">R$ 70,00</strong>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-image">🎨</div>
+                                <div class="product-info">
+                                    <h4>Tosa Estética</h4>
+                                    <p>Corte completo seguindo o padrão da raça ou conforme preferência do cliente.</p>
+                                    <strong style="color: var(--primary);">A partir de R$ 90,00</strong>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-image">👑</div>
+                                <div class="product-info">
+                                    <h4>Tosa Criativa</h4>
+                                    <p>Cortes diferenciados e criativos para deixar seu pet ainda mais especial.</p>
+                                    <strong style="color: var(--primary);">A partir de R$ 110,00</strong>
+                                </div>
+                            </div>
+                            <button class="submit-button" onclick="solicitarInfo('tosa')">Solicitar Informações</button>
+                        </div>
+                    </div>
+
+                    <!-- Categoria Ração -->
+                    <div class="category">
+                        <div class="category-header">
+                            <h3>🐶 Rações e Alimentação</h3>
+                        </div>
+                        <div class="category-content">
+                            <img src="Image_fx (21).jpg" alt="Rações e Alimentação" style="width: 315px; height:350px; object-fit:cover; border-radius:30px; margin-right:100px;">
+                            <div class="product-item">
+                                <div class="product-image">🐕</div>
+                                <div class="product-info">
+                                    <h4>Ração Premium Cães</h4>
+                                    <p>Rações super premium das melhores marcas para cães de todos os portes e idades.</p>
+                                    <strong style="color: var(--primary);">A partir de R$ 100,00</strong>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-image">🐱</div>
+                                <div class="product-info">
+                                    <h4>Ração Premium Gatos</h4>
+                                    <p>Alimentação balanceada especialmente formulada para felinos de todas as idades.</p>
+                                    <strong style="color: var(--primary);">A partir de R$ 50,00</strong>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-image">🍖</div>
+                                <div class="product-info">
+                                    <h4>Petiscos e Snacks</h4>
+                                    <p>Variedade de petiscos naturais e funcionais para recompensar e agradar seu pet.</p>
+                                    <strong style="color: var(--primary);">A partir de R$ 20,00</strong>
+                                </div>
+                            </div>
+                            <button class="submit-button" onclick="solicitarInfo('racao')">Solicitar Informações</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Seção de Promoções -->
+                <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: var(--primary-foreground); padding: 40px; border-radius: var(--radius); margin-top: 60px; text-align: center;">
+                    <h3 style="font-size: 2rem; margin-bottom: 20px;">🎉 Ofertas Especiais</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                        <div style="background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: var(--radius);">
+                            <h4>Combo Completo</h4>
+                            <p>Banho + Tosa + Ração 3kg</p>
+                            <strong style="font-size: 1.2rem;">R$ 100,00</strong>
+                        </div>
+                        <div style="background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: var(--radius);">
+                            <h4>Pacote Mensal</h4>
+                            <p>4 Banhos no mês</p>
+                            <strong style="font-size: 1.2rem;">R$ 300,00</strong>
+                        </div>
+                        <div style="background-color: rgba(255, 255, 255, 0.1); padding: 20px; border-radius: var(--radius);">
+                            <h4>Cliente Fiel</h4>
+                            <p>10% desconto na 5ª visita</p>
+                            <strong style="font-size: 1.2rem;">Desconto Progressivo</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Melhor Amigo Petshop</h4>
+                    <p>No Petshop "Melhor Amigo", também acreditamos na importância da 
+socialização e diversão para o bem-estar dos animais. Por isso, oferecemos 
+momentos especiais de brincadeiras e interação em nosso espaço dedicado, 
+garantindo que seu pet se divirta e faça novos amigos. Além disso, temos uma 
+ampla variedade de brinquedos e acessórios para enriquecer a vida do seu 
+animalzinho. Desde 2009 cuidando do seu melhor amigo.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>🏪 Av. Vinte de Janeiro, 377 - Boa Viagem, Recife - PE</p>
+                    <p>📞 (81)3341-1705</p>
+                    <p>📩 contato:<strong> melhoramigo@gmail.com</strong></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horário de Funcionamento</h4>
+                    <p>Segunda a Sábado: 8h às 17:30h</p>
+                    <p>Domingo: Fechado</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Melhor Amigo Petshop. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Christian Vinicius.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
